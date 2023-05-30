@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Mi primer Proyecto Website</title>
+        <link rel="stylesheet" type="text/css" href="styles-contacto.css">
+    </head>
+    <body>
+        <header class="head">
+            <a href="./mi-primer-website.html" class="brand"> Inicio</a>
+            <div class="container-nav">
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="./Portafolio.html" style="color:rgb(116, 246, 255)">Portafolio</a></li>
+                        <li><a href="./Biografia.html" style="color:rgb(116, 246, 255)">Biografia</a></li>
+                        <li><a href="./Contacto.html" style="color:rgb(116, 246, 255)">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="button-menu-toggle">Menu</button>
+            </div>
+            <div class="myImagen"></div>
+        </header>
+        <main>
+            <div class="titulo">
+                <h1>Bienvenidos a mi primer Website!</h1>
+            </div>
+            <div class="container">
+                <div class="row-contact">
+                    <div class="column-contact">
+                        <h1>Contacto</h1>
+                        <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
+                    </div>
+                    <div class="column-image-presentacion">
+                        <img src="../Imagenes/email-and-mail-icon-sign-symbol-design-free-png.webp" alt="" width="100%">                        
+                    </div>
+                    <div class="containerform">
+                        <div class="container-form">
+                        <form>
+                            <form id="contactar">
+                                <! - - campo para nombre - ->
+                                <label for="nombre" class="form">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+        
+                                <! - - campo para correo electrónico - ->
+                                <label for="email" class="form">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+        
+                                <! - - campo para país - ->
+                                <label for="email" class="form">País:</label>
+                                <select id="pais" name="pais" required>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="peru">Perú</option>
+                                    <option value="venezuela">Venezuela</option>
+                                </select>
+        
+                                <! - - campo para mensaje - ->
+                                <label for="mensaje" class="form">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" required></textarea>
+        
+                                <button type="submit">Enviar</button>
+                                <input type="checkbox" class="check-input">
+                                <label class="check-label" >Acepto términos y condicones</label>
+                            </form>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container-footer">
+                    <div class="row-footer-info">
+                        <div class="about-me">
+                            <p class="title-about-me">Carlos A. Silva</p>
+                            <p class="parrafo-footer">Estudiante de Full Stack en Egg Cooperation<br>
+                                cardenalcazm2005@gmail.com<br>
+                                +58 412-1080201<br>
+                                Barquisimeto - Venezuela
+                            </p>
+                        </div>
+                        <div class="links-redes-sociales">
+                            <div class="title-links-redes-sociales"><p>Síguenos</p></div>
+                            <p class="parrafo-footer">En nuestras redes sociales</p>
+                            <div class="logos-redes-sociales">
+                                <img src="../Imagenes/Octicons-mark-github.png" alt="" width="30px">
+                                <img src="../Imagenes/1656994883linkedin-logo-transparent.png" alt="" width="30px">
+                                <img src="../Imagenes/Whatsapp-logo-vector.webp" alt="" width="50px">
+                            </div>
+                        </div>
+                        <div class="newsletter">
+                            <div class="title-newsletter">
+                                <p>Newsletter</p>
+                            </div>
+                            <p class="parrafo-footer">Suscribete y enterate de nuestro avance</p>
+                            <div>
+                                <input type="email" class="input-email" placeholder="correo electrónico">
+                            </div>
+                            <div>
+                                <input type="checkbox" class="check-input">
+                                <label class="check-label" >Acepto términos y condicones</label>
+                            </div>
+                            <div>
+                                <button onclick="showAlert()" type="submit" class="btn-suscribirme">Suscribirme</button>                                </div>
+                        </div>
+                    </div>
+                    <div class="row-footer-info-contact">
+                        <p style="text-align: center;">&copy; Carlos A. Silva M. - 2023</p>
+                    </div>
+                </div>
+            </footer>
+            <script src="./script.js"></script>
+    </body>

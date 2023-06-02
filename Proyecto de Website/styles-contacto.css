@@ -83,7 +83,6 @@ body {
 }
 h1 {
     display: flex;
-    justify-content: flex-end;
     color: rgb(176, 234, 255);
     font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 55px;
@@ -141,17 +140,43 @@ p {
 .container-form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: baseline;
     padding: 20px;
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 10px;
-    justify-content:space-between;
     align-items: center;
     font-size: 22px;
     background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(132, 132, 132));
     /* border: 2px solid green; */
+}
+.name {
+    display: flex;
+    border: none;
+    box-shadow: 0px 0px 1px rgb(153, 153, 153);
+    border-radius: 5px;
+    font-size: 17px;
+}
+.email {
+    display: flex;
+    border: none;
+    box-shadow: 0px 0px 1px rgb(153, 153, 153);
+    border-radius: 5px;
+    font-size: 17px;
+}
+.pais {
+    display: flex;
+    border: none;
+    box-shadow: 0px 0px 1px rgb(153, 153, 153);
+    border-radius: 5px;
+    font-size: 17px;
+}
+.mensaje {
+    display: flex;
+    border: none;
+    box-shadow: 0px 0px 1px rgb(153, 153, 153);
+    border-radius: 5px;
+    font-size: 17px;
 }
 footer {
     background: linear-gradient(to bottom right, rgb(23, 61, 126), rgb(0, 5, 65));

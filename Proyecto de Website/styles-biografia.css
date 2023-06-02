@@ -73,6 +73,7 @@ a :hover {
     text-shadow: 5px 5px 15px rgb(255, 255, 255);
 }
 body {
+    background-image: url(../Imagenes/fondo_website.gif);
     background-color: rgba(239, 251, 255, 0.761);
     background-repeat: no-repeat;
     background-size:100%;
@@ -111,6 +112,176 @@ p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
     padding: 15px;
+    text-align: center;
+}
+.titulo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+    /* border: 2px solid red; */
+}
+.container {
+    max-width:max-content;
+    padding: 5px;
+    margin-top: 100px;
+  /* border: 2px solid blue; */
+}
+/* Comienzo de los estilos de la fila de presetancion */
+.row-presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    border-radius: 10px;
+    justify-content:center;
+    align-items: center;
+    font-size: 22px;
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(132, 132, 132));
+    /* border: 2px solid green; */
+}
+.column-presentacion {
+    max-width: 500px;
+    width:auto;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: linear-gradient(to bottom right, rgba(253, 253, 253), 
+    rgba(0, 0, 0));
+    box-shadow: 0px 0px 15px rgb(79, 142, 147);
+    /* border: 2px solid green; */
+}
+.column-image-presentacion {
+    /* flex:none; */
+    display: flex;
+    align-items:flex-end;
+    max-width: 400px;
+    width:auto ;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+}
+  /* Fin de los estilos de la fila de presentacion */
+
+  /* Inicio de los estilos de la fila de Lenguajes */
+.row-lenguajes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    justify-content:center;
+    font-size: 22px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.100));
+    /* border: 2px solid green; */
+}
+footer {
+    background: linear-gradient(to bottom right, rgb(23, 61, 126), rgb(0, 5, 65));
+    /* height: 100px; */
+    border-top-left-radius: 100px;
+    margin-top: 100px;
+}
+footer p {
+    color: rgb(162, 255, 255);
+}
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px dashed black; */
+}
+.row-footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 2px dashed blue; */
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: right;
+    /* border: 1px solid green; */
+}
+.title-about-me, .title-links-redes-sociales, .title-newsletter {
+    font-size: 22px;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(25, 0, 53);
+}
+.links-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+.logos-redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    /* border: 1px solid green; */
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+.input-email {
+    width: 240px;
+    height: 30px;
+    color: gray;
+    border: none;
+    box-shadow: 0px 0px 1px rgb(153, 153, 153);
+    border-radius: 5px;
+}
+.input-email:hover {
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+    /* border-style:hidden; */
+}
+.input-email:active {
+    border-style:none;
+    border-collapse: collapse;
+    border-bottom-style: none;
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+    border: none;
+    outline: none;
+}
+.check-label {
+    color: lightgray;
+    font-family:monospace;
+    /* margin-top: 2px; */
+}
+.check-input {
+    margin-top: 10px;
+}
+.btn-suscribirme {
+    width: 240px;
+    height: 30px;
+    color: white;
+    background-color: rgb(43, 165, 226);
+    border: none;
+    box-shadow: 0px 0px 1px rgb(153, 153, 153);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.btn-suscribirme:hover {
+    background-color: rgb(50, 88, 255);
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+.parrafo-footer {
+    /* font-size: 10px; */
+    font-family: monospace;
+    color: lightgray;
+    padding: 0px 5px 5px 5px;
+    margin: 0px 5px 10px 5px;
     text-align: center;
 }
 @media screen and (max-width: 768px) {
